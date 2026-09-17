@@ -14,7 +14,14 @@ export default function Hero() {
       origin: { y: 0.5 },
       colors: ["#FFCCD7", "#FFB3C3", "#FF85A2", "#FB5B86"],
     });
-    window.open("/resume.pdf", "_blank");
+    const link = document.createElement("a");
+    link.href = "/ruhini-udara.pdf";
+    link.target = "_blank";
+    link.rel = "noopener noreferrer";
+    link.download = "Ruhini-Udara-CV.pdf";
+    document.body.appendChild(link);
+    link.click();
+    document.body.removeChild(link);
   };
 
   return (
