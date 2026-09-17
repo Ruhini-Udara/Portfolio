@@ -40,7 +40,7 @@ export default function Contact() {
             Let&apos;s Build Something <span className="gradient-title">Great Together</span>
           </h2>
           <p className="section-subtitle">
-            I am actively seeking a Software Engineer Internship. Feel free to reach out directly through any channel below!
+            Feel free to reach out directly through any channel below!
           </p>
         </div>
 
@@ -57,7 +57,7 @@ export default function Contact() {
               <h3 className="contact-card-val">
                 <a href={`mailto:${emailAddress}`}>{emailAddress}</a>
               </h3>
-              <p className="contact-card-sub">Best for internship inquiries &amp; opportunities</p>
+              <p className="contact-card-sub">Best for inquiries &amp; opportunities</p>
             </div>
             <button
               onClick={handleCopyEmail}
