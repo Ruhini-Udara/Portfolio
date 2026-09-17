@@ -16,16 +16,16 @@
   --border-pink: #FF9EAE;
   --border-glow: rgba(255, 158, 174, 0.4);
 
-  --text-primary: #3B2032;
-  --text-secondary: #704F67;
-  --text-muted: #9E7D96;
+  --text-primary: #1C0D1B;
+  --text-secondary: #381E33;
+  --text-muted: #56384E;
 
   --pink-baby: #FFCCD7;
   --pink-soft: #FFB3C3;
-  --pink-sweet: #FF85A2;
-  --pink-primary: #FB5B86;
-  --pink-deep: #D93B68;
-  --lavender: #D4145A;
+  --pink-sweet: #B81D52;
+  --pink-primary: #D9285C;
+  --pink-deep: #B31342;
+  --lavender: #991B79;
 
   --terminal-bar: #362433;
 
@@ -1672,6 +1672,7 @@ body {
 
 .project-summary {
   font-size: 0.88rem;
+  font-weight: 500;
   color: var(--text-secondary);
   line-height: 1.6;
 }
@@ -1701,9 +1702,10 @@ body {
   display: flex;
   align-items: flex-start;
   gap: 0.45rem;
-  font-size: 0.82rem;
+  font-size: 0.83rem;
+  font-weight: 500;
   color: var(--text-secondary);
-  line-height: 1.45;
+  line-height: 1.5;
 }
 
 .highlight-item svg {
@@ -1732,7 +1734,7 @@ body {
   font-weight: 700;
   background: var(--bg-pill);
   border: 1px solid var(--border-soft);
-  color: var(--text-secondary);
+  color: var(--text-primary);
   padding: 0.25rem 0.65rem;
   border-radius: 9999px;
 }

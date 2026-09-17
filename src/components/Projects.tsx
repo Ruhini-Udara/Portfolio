@@ -1,6 +1,6 @@
 "use client";
 
-import React, { useRef, useState, useEffect } from "react";
+import React, { useRef, useState, useEffect, useCallback } from "react";
 import Image from "next/image";
 import {
   ExternalLink,
@@ -63,7 +63,7 @@ export default function Projects() {
       date: "2026",
       badge: "Individual Project",
       description:
-        "High-performance personal developer portfolio engineered with Next.js and TypeScript, featuring custom dark/light theme switching, animated tech marquees, and an interactive certificate gallery.",
+        "High-performance developer portfolio built with Next.js and TypeScript, featuring custom dark/light theming and interactive galleries.",
       highlights: [
         "Architected with Next.js App Router and strict TypeScript for type safety and fast static generation.",
         "Built a custom theme provider with persistent dark/light mode using CSS custom properties.",
@@ -138,7 +138,7 @@ export default function Projects() {
     },
   ];
 
-  const updateScrollState = () => {
+  const updateScrollState = useCallback(() => {
     if (sliderRef.current) {
       const { scrollLeft, scrollWidth, clientWidth } = sliderRef.current;
       setCanScrollLeft(scrollLeft > 10);
@@ -151,7 +151,7 @@ export default function Projects() {
         setCurrentIndex(Math.min(projects.length - 1, Math.max(0, index)));
       }
     }
-  };
+  }, [projects.length]);
 
   const scroll = (direction: "left" | "right") => {
     if (sliderRef.current) {
@@ -181,7 +181,7 @@ export default function Projects() {
         window.removeEventListener("resize", updateScrollState);
       };
     }
-  }, []);
+  }, [updateScrollState]);
 
   return (
     <section id="projects" className="section-wrapper">

@@ -33,7 +33,7 @@ export default function About() {
                 I specialize in full-stack development with a strong focus on backend resilience and responsive interfaces. My work spans designing normalized relational schemas in PostgreSQL, writing robust RESTful services in Spring Boot, and creating fast, interactive frontends with Next.js and TypeScript.
               </p>
               <p>
-                Whether developing role-based workflows for enterprise HR software or architecting IoT embedded solutions for automated checkouts, I prioritize architectural clarity, reliability, and code that is maintainable for growing teams.
+                Whether developing full-stack web applications, RESTful APIs, or intuitive user interfaces, I prioritize clean architecture, reliability, and maintainable code.
               </p>
             </div>
 
